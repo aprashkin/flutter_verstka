@@ -23,8 +23,17 @@ class PerssonCard extends StatelessWidget {
     {
       ratingstar.add(const Icon(Icons.star_rounded,
           color: Colors.yellow,
-          size: 15),);
+          size: 15));
     }
+    if (rateStar == 0)
+      {
+        for (i = 0; i < 5; i++)
+          {
+            ratingstar.add(const Icon(Icons.close,
+                color: Colors.yellow,
+                size: 15));
+          }
+      }
     return ratingstar;
   }
 
@@ -32,7 +41,6 @@ class PerssonCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return
       Container(
-
         width: 170,
         height: 220,
         decoration: BoxDecoration(

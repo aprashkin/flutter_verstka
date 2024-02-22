@@ -49,7 +49,7 @@ class TryThree extends StatelessWidget {
                       child:  Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                           PerssonCard(personName: 'qwerty', experience: 5, rateStar: 5),
+                           PerssonCard(personName: 'qwerty', experience: 5, rateStar: 0),
                            SizedBox(width: 10),
                            PerssonCard(personName: 'qwerty2', experience: 4, rateStar: 4),
                            SizedBox(width: 10),
@@ -58,12 +58,9 @@ class TryThree extends StatelessWidget {
                            PerssonCard(personName: 'qwerty4', experience: 2, rateStar: 2),
                            SizedBox(width: 10),
                            PerssonCard(personName: 'qwerty5', experience: 1, rateStar: 1),
-
                         ],
                       ),
                     )
-
-
                   ],
                 ),
               ),
